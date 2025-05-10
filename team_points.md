@@ -10,3 +10,7 @@
 | **Challenge** | **organizing_container.c** |
 | **Total Points** | **20** |
 
+### gracengina - 2025-05-10 10:27:57
+| **Challenge** | **climbing_leaderboard.py** |
+| **Total Points** | **20** |
+
