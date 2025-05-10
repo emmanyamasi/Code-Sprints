@@ -1,13 +1,28 @@
-/**
- * Determines if it is possible to organize containers so each contains balls of only one type.
- *
- * @param {number[][]} container - A 2D array where container[i][j] is the number of balls of type j in container i
- * @returns {string} 'Possible' if reorganization is possible, otherwise 'Impossible'
- */
-
 function organizingContainers(container) {
-    // Write your code here
-    return "Impossible";
+    const n = container.length;
+    const containerSums = new Array(n).fill(0);
+    const typeSums = new Array(n).fill(0);
+
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            containerSums[i] += container[i][j]; // total balls in container i
+            typeSums[j] += container[i][j];      // total balls of type j
+        }
+    }
+
+    containerSums.sort((a, b) => a - b);
+    typeSums.sort((a, b) => a - b);
+
+    for (let i = 0; i < n; i++) {
+        if (containerSums[i] !== typeSums[i]) {
+            return "Impossible";
+        }
+    }
+
+    return "Possible";
 }
 
 module.exports = { organizingContainers };
+
+
+
