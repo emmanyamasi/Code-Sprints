@@ -2,3 +2,7 @@
 | **Challenge** | **sum_two_numbers.py** |
 | **Total Points** | **10** |
 
+### Mark Gatere - 2025-05-10 09:49:38
+| **Challenge** | **discount.js** |
+| **Total Points** | **10** |
+
