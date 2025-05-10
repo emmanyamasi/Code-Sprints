@@ -1,5 +1,6 @@
-def count_vowels( word):
-    
+def count_vowels(word):
     vowels = 0
-    # write your code here
+    for letter in word.lower():
+        if letter in "aeiou":
+            vowels += 1
     return vowels
