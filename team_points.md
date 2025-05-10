@@ -14,3 +14,7 @@
 | **Challenge** | **climbing_leaderboard.py** |
 | **Total Points** | **20** |
 
+### Mark Gatere - 2025-05-10 10:31:57
+| **Challenge** | **grading_students.py** |
+| **Total Points** | **10** |
+
